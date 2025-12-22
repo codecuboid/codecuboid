@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard";
 import ContactForm from "./ContactForm";
 
 const SERVICES = [
-  { title: "Data Annotation Service", slug: "data-annotation", summary: "High-quality, secure labeling for computer vision, NLP and audio datasets." },
+  { title: "Data Annotation Service", slug: "data-annotation", summary: "From 2D bounding boxes to complex 3D point clouds, we deliver high-quality annotations across images, videos, audio, and LiDAR data with pixel-perfect accuracy." },
   { title: "Web Services & Custom Web Application", slug: "web-services", summary: "Custom web applications, APIs, and backend services designed for scale and reliability." },
   { title: "Fullstack Development", slug: "fullstack-development", summary: "End-to-end product development with modern frameworks and testing." },
   { title: "Mobile & Desktop Application", slug: "mobile-desktop-apps", summary: "Native and cross-platform mobile apps plus desktop applications, UI/UX and distribution support." },

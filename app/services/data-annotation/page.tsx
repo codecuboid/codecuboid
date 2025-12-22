@@ -79,124 +79,181 @@ export default function DataAnnotation() {
                 across images, videos, audio, and LiDAR data with pixel-perfect accuracy.
               </p>
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '40px' }}>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ 2D Bounding Box</div>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ Polygon Segmentation</div>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ 3D Cuboid</div>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ LiDAR Point Cloud</div>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ Video Tracking</div>
-                <div style={{
-                  padding: '10px 20px',
-                  background: 'var(--card-bg)',
-                  border: '1px solid var(--card-border)',
-                  borderRadius: '8px',
-                  fontSize: '14px',
-                  fontWeight: 600
-                }}>✓ Keypoint Detection</div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ 2D Bounding Box
+                </div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ Polygon Segmentation
+                </div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ 3D Cuboid
+                </div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ LiDAR Point Cloud
+                </div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ Video Tracking
+                </div>
+                <div
+                  style={{
+                    padding: '10px 20px',
+                    background: 'var(--card-bg)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    transform: 'scale(1)',
+                    transition: 'transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.18)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  ✓ Keypoint Detection
+                </div>
               </div>
             </div>
 
             {/* Right Visual */}
             <div className="animate-right" style={{
               position: 'relative',
-              height: '500px',
+              width: '100%',
               display: 'flex',
-              alignItems: 'center',
+              alignItems: 'stretch',
               justifyContent: 'center'
             }}>
-              {/* Annotation Illustration */}
-              <div style={{
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(135deg, rgba(255,107,53,0.05), rgba(0,217,255,0.05))',
-                borderRadius: '24px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                position: 'relative',
-                overflow: 'hidden',
-                boxShadow: '0 20px 60px rgba(0,0,0,0.1)'
-              }}>
-                <svg width="100%" height="100%" viewBox="0 0 500 500" style={{ position: 'absolute' }}>
-                  {/* Background grid */}
-                  <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="var(--card-border)" strokeWidth="0.5" opacity="0.3"/>
-                    </pattern>
-                  </defs>
-                  <rect width="500" height="500" fill="url(#grid)"/>
-                  
-                  {/* Image placeholder */}
-                  <rect x="80" y="100" width="340" height="300" rx="8" fill="rgba(200,200,200,0.1)" stroke="var(--card-border)" strokeWidth="2"/>
-                  
-                  {/* Animated bounding boxes */}
-                  <rect x="120" y="160" width="140" height="120" rx="4" fill="none" stroke="var(--accent-1)" strokeWidth="3">
-                    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
-                  </rect>
-                  <text x="125" y="155" fill="var(--accent-1)" fontSize="12" fontWeight="700">Car - 98%</text>
-                  
-                  {/* Polygon segmentation */}
-                  <path d="M300 200 L360 180 L400 240 L380 320 L320 340 Z" fill="rgba(0,217,255,0.15)" stroke="var(--accent-2)" strokeWidth="3">
-                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
-                  </path>
-                  <text x="305" y="195" fill="var(--accent-2)" fontSize="12" fontWeight="700">Person - 95%</text>
-                  
-                  {/* Keypoints */}
-                  <circle cx="200" cy="240" r="5" fill="var(--accent-4)">
-                    <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle cx="220" cy="260" r="5" fill="var(--accent-4)">
-                    <animate attributeName="r" values="5;7;5" dur="1.5s" begin="0.2s" repeatCount="indefinite"/>
-                  </circle>
-                  <circle cx="180" cy="260" r="5" fill="var(--accent-4)">
-                    <animate attributeName="r" values="5;7;5" dur="1.5s" begin="0.4s" repeatCount="indefinite"/>
-                  </circle>
-                  <line x1="200" y1="240" x2="220" y2="260" stroke="var(--accent-4)" strokeWidth="2"/>
-                  <line x1="200" y1="240" x2="180" y2="260" stroke="var(--accent-4)" strokeWidth="2"/>
-                </svg>
-                <svg width="200" height="200" viewBox="0 0 200 200" style={{ zIndex: 2 }}>
-                  <rect x="20" y="40" width="80" height="60" fill="none" stroke="var(--accent-1)" strokeWidth="3" />
-                  <rect x="100" y="80" width="70" height="50" fill="none" stroke="var(--accent-4)" strokeWidth="3" />
-                  <circle cx="60" cy="70" r="5" fill="var(--accent-2)" />
-                  <circle cx="140" cy="105" r="5" fill="var(--accent-2)" />
-                  <text x="100" y="180" textAnchor="middle" fill="var(--text-secondary)" fontSize="14" fontWeight="600">
-                    Annotation Example
-                  </text>
-                </svg>
+              {/* Realistic annotated hero image */}
+              <div
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '24px',
+                  overflow: 'hidden',
+                  boxShadow: '0 20px 60px rgba(0,0,0,0.1)',
+                  background: 'var(--bg-secondary)',
+                  transform: 'scale(1)',
+                  transition: 'transform 400ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 400ms ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.04)';
+                  e.currentTarget.style.boxShadow = '0 28px 80px rgba(0,0,0,0.25)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 20px 60px rgba(0,0,0,0.1)';
+                }}
+              >
+                <img
+                  src="/images/HeroPageImage.png"
+                  alt="Top view of busy street with cuboid annotations for vehicles, pedestrians, pets and traffic signals"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    display: 'block'
+                  }}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -237,12 +294,13 @@ export default function DataAnnotation() {
                     <rect x="10" y="12" width="28" height="24" stroke="var(--accent-1)" strokeWidth="3" rx="2"/>
                     <circle cx="14" cy="16" r="2" fill="var(--accent-4)"/>
                     <circle cx="34" cy="32" r="2" fill="var(--accent-4)"/>
+                    <rect x="16" y="28" width="10" height="6" rx="1" fill="rgba(255,107,53,0.2)" stroke="var(--accent-1)" strokeWidth="1.5"/>
                   </svg>
                 ),
-                title: '2D Bounding Box',
-                desc: 'Industry-standard rectangular annotations for object detection and classification. Perfect for training YOLO, R-CNN, and SSD models.',
-                details: 'Tight-fitting boxes with precise coordinates (x, y, width, height). We handle overlapping objects, partial occlusions, and rotated bounding boxes for oriented object detection.',
-                types: ['Axis-Aligned Boxes', 'Rotated Boxes', 'Multi-Class Labels', 'Confidence Scores']
+                title: '2D Bounding Box & Image Classification',
+                desc: 'Industry-standard rectangular annotations for object detection combined with whole-image categorization. Perfect for training YOLO, R-CNN, SSD detection models, and content moderation.',
+                details: 'Tight-fitting boxes with precise coordinates (x, y, width, height) and categorical labels with confidence scores. Handle overlapping objects, partial occlusions, rotated bounding boxes, hierarchical taxonomies, multi-label classification for large-scale organization.',
+                types: ['Axis-Aligned Boxes', 'Rotated Boxes', 'Multi-Class Labels', 'Single-Label', 'Multi-Label', 'Hierarchical Categories', 'Confidence Scores']
               },
               {
                 icon: (
@@ -254,8 +312,8 @@ export default function DataAnnotation() {
                   </svg>
                 ),
                 title: 'Polygon & Segmentation',
-                desc: 'Pixel-precise annotations for complex, irregular shapes. Essential for medical imaging, satellite imagery, and autonomous driving applications.',
-                details: 'Multi-point polygons with unlimited vertices for accurate object boundaries. Supports instance segmentation (individual objects), semantic segmentation (pixel classification), and panoptic segmentation (combining both).',
+                desc: 'Pixel-precise annotations for complex irregular shapes and boundaries. Essential for medical imaging, satellite imagery analysis, and autonomous driving perception applications.',
+                details: 'Multi-point polygons with unlimited vertices for accurate object boundaries and edge detection. Supports instance segmentation for individual objects, semantic segmentation for pixel classification, and panoptic segmentation combining both approaches.',
                 types: ['Instance Segmentation', 'Semantic Masks', 'Panoptic', 'Multi-Part Objects', 'Occlusion Handling']
               },
               {
@@ -266,13 +324,15 @@ export default function DataAnnotation() {
                     <circle cx="30" cy="24" r="2.5" fill="var(--accent-4)"/>
                     <circle cx="18" cy="34" r="2.5" fill="var(--accent-4)"/>
                     <circle cx="30" cy="34" r="2.5" fill="var(--accent-4)"/>
-                    <line x1="24" y1="14" x2="18" y2="24" stroke="var(--accent-2)" strokeWidth="2"/>
-                    <line x1="24" y1="14" x2="30" y2="24" stroke="var(--accent-2)" strokeWidth="2"/>
+                    <line x1="24" y1="14" x2="18" y2="24" stroke="var(--accent-1)" strokeWidth="4"/>
+                    <line x1="24" y1="14" x2="30" y2="24" stroke="var(--accent-1)" strokeWidth="4"/>
+                    <line x1="18" y1="24" x2="18" y2="34" stroke="var(--accent-2)" strokeWidth="4"/>
+                    <line x1="30" y1="24" x2="30" y2="34" stroke="var(--accent-2)" strokeWidth="4"/>
                   </svg>
                 ),
                 title: 'Keypoint & Landmark Annotation',
-                desc: 'Precise point marking for pose estimation, facial recognition, and skeletal tracking. Critical for fitness apps, AR filters, and biometric systems.',
-                details: 'Mark anatomical landmarks, joint positions, or custom points with sub-pixel accuracy. Supports skeletal connections, visibility flags, and confidence scores for occluded points.',
+                desc: 'Precise point marking for pose estimation, facial recognition, and skeletal tracking systems. Critical for fitness applications, AR filters, and advanced biometric systems.',
+                details: 'Mark anatomical landmarks, joint positions, custom points with sub-pixel accuracy and precision. Supports skeletal connections, visibility flags for occluded points, and confidence scores for quality assessment and validation.',
                 types: ['Body Pose (17-33 points)', 'Facial Landmarks (68-468 points)', 'Hand Tracking (21 points)', 'Custom Skeletons', 'Visibility States']
               },
               {
@@ -282,58 +342,33 @@ export default function DataAnnotation() {
                     <path d="M14 18 L10 14 L30 14 L34 18" stroke="var(--accent-1)" strokeWidth="2.5" fill="none"/>
                     <path d="M34 18 L34 34 L30 30" stroke="var(--accent-1)" strokeWidth="2.5" fill="none"/>
                     <path d="M14 34 L10 30 L10 14" stroke="var(--accent-1)" strokeWidth="2.5" fill="none"/>
+                    <circle cx="12" cy="20" r="1.5" fill="var(--accent-2)"/>
+                    <circle cx="18" cy="16" r="1.5" fill="var(--accent-2)"/>
+                    <circle cx="24" cy="22" r="1.5" fill="var(--accent-4)"/>
+                    <rect x="18" y="24" width="12" height="8" rx="1" stroke="var(--accent-2)" strokeWidth="1.5" fill="rgba(0,217,255,0.1)"/>
                   </svg>
                 ),
-                title: '3D Cuboid Annotation',
-                desc: 'Three-dimensional bounding boxes with orientation, rotation, and depth. Essential for autonomous vehicles, robotics, and AR/VR applications.',
-                details: '3D boxes with 9 degrees of freedom (x, y, z position + width, height, depth + yaw, pitch, roll). Handles perspective projection, truncation, and occlusion reasoning for accurate spatial understanding.',
-                types: ['3D Object Detection', 'Orientation Vectors', 'Occlusion Levels', 'Truncation Flags', 'Distance Estimation']
+                title: '3D Spatial Annotation (Cuboid, LiDAR & Video)',
+                desc: 'Comprehensive 3D annotation combining cuboid boxes, LiDAR point clouds, and video tracking. For autonomous vehicles, robotics, AR/VR applications, and spatial understanding.',
+                details: '3D boxes with 9 degrees of freedom including position, dimensions, and rotation angles. Point cloud semantic segmentation with millions of labeled points. Frame-by-frame video tracking with temporal consistency and interpolation for efficient workflow.',
+                types: ['3D Object Detection', 'LiDAR Segmentation', 'Video Tracking', 'Point Cloud Processing', 'Orientation Vectors', 'Temporal Consistency', 'Multi-Sensor Fusion', 'Keyframe Interpolation']
               },
               {
                 icon: (
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <circle cx="12" cy="20" r="1.5" fill="var(--accent-1)"/>
-                    <circle cx="18" cy="16" r="1.5" fill="var(--accent-1)"/>
-                    <circle cx="24" cy="22" r="1.5" fill="var(--accent-2)"/>
-                    <circle cx="30" cy="18" r="1.5" fill="var(--accent-2)"/>
-                    <circle cx="36" cy="24" r="1.5" fill="var(--accent-1)"/>
-                    <circle cx="16" cy="28" r="1.5" fill="var(--accent-4)"/>
-                    <circle cx="22" cy="32" r="1.5" fill="var(--accent-4)"/>
-                    <circle cx="28" cy="30" r="1.5" fill="var(--accent-2)"/>
-                    <circle cx="34" cy="34" r="1.5" fill="var(--accent-1)"/>
+                    <rect x="6" y="10" width="36" height="28" rx="2" stroke="var(--accent-1)" strokeWidth="2.5" fill="rgba(255,107,53,0.02)"/>
+                    <line x1="10" y1="18" x2="22" y2="18" stroke="var(--accent-2)" strokeWidth="2"/>
+                    <line x1="10" y1="24" x2="28" y2="24" stroke="var(--accent-4)" strokeWidth="2"/>
+                    <line x1="10" y1="30" x2="20" y2="30" stroke="var(--accent-2)" strokeWidth="2"/>
+                    <circle cx="32" cy="18" r="2" fill="var(--accent-1)"/>
+                    <circle cx="36" cy="24" r="2" fill="var(--accent-1)"/>
+                    <circle cx="34" cy="30" r="2" fill="var(--accent-1)"/>
                   </svg>
                 ),
-                title: 'LiDAR Point Cloud',
-                desc: '3D point cloud annotation for autonomous navigation, mapping, and environmental sensing. Process millions of points with semantic labels.',
-                details: 'Annotate raw LiDAR scans with 3D bounding boxes, semantic segmentation, and instance IDs. Handle multi-frame tracking, ground plane removal, and intensity-based classification for robust perception.',
-                types: ['3D Semantic Segmentation', 'Object Tracking', 'Ground Removal', 'Intensity Classification', 'Multi-Sensor Fusion']
-              },
-              {
-                icon: (
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <rect x="8" y="12" width="32" height="24" rx="2" stroke="var(--accent-1)" strokeWidth="2.5"/>
-                    <rect x="14" y="18" width="8" height="6" stroke="var(--accent-4)" strokeWidth="2" fill="rgba(255,23,68,0.1)"/>
-                    <rect x="24" y="20" width="6" height="8" stroke="var(--accent-2)" strokeWidth="2" fill="rgba(0,217,255,0.1)"/>
-                    <path d="M42 16 L46 20 L42 24" stroke="var(--accent-1)" strokeWidth="2" fill="none"/>
-                  </svg>
-                ),
-                title: 'Video Annotation',
-                desc: 'Frame-by-frame annotation with temporal consistency and object tracking across sequences. Perfect for action recognition and surveillance.',
-                details: 'Track objects through video sequences with unique IDs. Interpolation between keyframes reduces manual work. Supports action recognition, event detection, and temporal segmentation with timestamps.',
-                types: ['Object Tracking', 'Action Recognition', 'Event Detection', 'Keyframe Interpolation', 'Temporal Segmentation', 'Activity Labels']
-              },
-              {
-                icon: (
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <rect x="10" y="10" width="28" height="28" rx="3" stroke="var(--accent-1)" strokeWidth="2.5"/>
-                    <circle cx="18" cy="20" r="4" fill="var(--accent-4)"/>
-                    <path d="M10 32 L18 24 L26 28 L38 18" stroke="var(--accent-2)" strokeWidth="2.5" fill="none"/>
-                  </svg>
-                ),
-                title: 'Image Classification',
-                desc: 'Categorize entire images into single or multiple classes. Foundation for content moderation, quality control, and visual search systems.',
-                details: 'Assign categorical labels with confidence scores. Supports hierarchical taxonomies, multi-label classification, and fine-grained categorization. Ideal for large-scale dataset organization and filtering.',
-                types: ['Single-Label', 'Multi-Label', 'Hierarchical Categories', 'Binary Classification', 'Fine-Grained Classes']
+                title: 'Text & NLP Annotation',
+                desc: 'Natural language processing for text classification, named entity recognition, sentiment analysis, and intent detection. Essential for chatbots, virtual assistants, and content analysis.',
+                details: 'Label entities including person, organization, location, and date markers. Classify sentiment as positive, negative, or neutral. Detect intents and slot filling for conversational AI with multi-lingual annotation support and relationship extraction.',
+                types: ['Named Entity Recognition', 'Sentiment Analysis', 'Intent Classification', 'Entity Relationship', 'POS Tagging', 'Text Classification', 'Slot Filling', 'Multi-lingual']
               },
               {
                 icon: (
@@ -346,8 +381,8 @@ export default function DataAnnotation() {
                   </svg>
                 ),
                 title: 'Audio & Speech Annotation',
-                desc: 'Transcription, speaker diarization, and acoustic event labeling. Powers voice assistants, call centers, and audio content analysis.',
-                details: 'High-accuracy speech-to-text with timestamps, speaker identification, emotion tagging, and acoustic event detection. Handle multiple languages, accents, background noise, and overlapping speech.',
+                desc: 'Transcription services, speaker diarization, and acoustic event labeling for audio data. Powers voice assistants, call centers, and comprehensive audio content analysis.',
+                details: 'High-accuracy speech-to-text transcription with timestamps and speaker identification tags. Emotion tagging and acoustic event detection capabilities. Handle multiple languages, accents, background noise, and overlapping speech with consistent quality.',
                 types: ['Speech-to-Text', 'Speaker Diarization', 'Emotion Recognition', 'Sound Event Detection', 'Music Tagging', 'Language ID']
               }
             ].map((service, idx) => (
@@ -356,7 +391,9 @@ export default function DataAnnotation() {
                 transition: 'all 400ms cubic-bezier(0.34, 1.56, 0.64, 1)',
                 cursor: 'default',
                 position: 'relative',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-8px)';
@@ -388,12 +425,14 @@ export default function DataAnnotation() {
                   fontSize: '14px',
                   lineHeight: 1.6,
                   marginBottom: '16px',
-                  opacity: 0.9
+                  opacity: 0.9,
+                  flex: 1
                 }}>{service.details}</p>
                 <div style={{
                   display: 'flex',
                   flexWrap: 'wrap',
-                  gap: '8px'
+                  gap: '8px',
+                  marginTop: 'auto'
                 }}>
                   {service.types.map((type, i) => (
                     <span key={i} style={{
@@ -466,17 +505,20 @@ export default function DataAnnotation() {
                 position: 'relative',
                 borderBottom: '2px solid var(--card-border)'
               }}>
-                {/* Sample bounding boxes */}
+                {/* Sample bounding boxes with car and person */}
                 <svg width="100%" height="100%" viewBox="0 0 400 240" style={{ position: 'absolute' }}>
+                  {/* Car bounding box */}
                   <rect x="60" y="60" width="120" height="100" fill="none" stroke="var(--accent-1)" strokeWidth="3" rx="4"/>
                   <text x="65" y="55" fill="var(--accent-1)" fontSize="14" fontWeight="700">Car - 98%</text>
-                  <rect x="220" y="80" width="90" height="80" fill="none" stroke="var(--accent-4)" strokeWidth="3" rx="4"/>
+                  {/* Car emoji/icon inside box */}
+                  <text x="110" y="120" fontSize="48">🚗</text>
+                  
+                  {/* Person bounding box */}
+                  <rect x="220" y="80" width="90" height="120" fill="none" stroke="var(--accent-4)" strokeWidth="3" rx="4"/>
                   <text x="225" y="75" fill="var(--accent-4)" fontSize="14" fontWeight="700">Person - 95%</text>
+                  {/* Person emoji/icon inside box */}
+                  <text x="250" y="150" fontSize="48">🚶</text>
                 </svg>
-                <div style={{
-                  fontSize: '64px',
-                  opacity: 0.3
-                }}>🚗</div>
               </div>
               <div style={{ padding: '24px' }}>
                 <h3 style={{
@@ -613,14 +655,34 @@ export default function DataAnnotation() {
                 borderBottom: '2px solid var(--card-border)'
               }}>
                 <svg width="100%" height="100%" viewBox="0 0 400 240">
-                  {/* 3D cuboid wireframe */}
-                  <path d="M120 100 L180 70 L240 100 L180 130 Z" fill="rgba(255,107,53,0.1)" stroke="var(--accent-1)" strokeWidth="3"/>
-                  <path d="M120 100 L120 160 L180 190 L180 130 Z" fill="rgba(255,107,53,0.15)" stroke="var(--accent-1)" strokeWidth="3"/>
-                  <path d="M180 130 L180 190 L240 160 L240 100 Z" fill="rgba(255,107,53,0.2)" stroke="var(--accent-1)" strokeWidth="3"/>
-                  <circle cx="120" cy="100" r="4" fill="var(--accent-4)"/>
-                  <circle cx="180" cy="70" r="4" fill="var(--accent-4)"/>
-                  <circle cx="240" cy="100" r="4" fill="var(--accent-4)"/>
-                  <circle cx="180" cy="130" r="4" fill="var(--accent-4)"/>
+                  {/* 3D cuboid with 8 vertices */}
+                  {/* Front face */}
+                  <line x1="120" y1="80" x2="200" y2="80" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="200" y1="80" x2="200" y2="160" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="200" y1="160" x2="120" y2="160" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="120" y1="160" x2="120" y2="80" stroke="var(--accent-1)" strokeWidth="3"/>
+                  {/* Back face */}
+                  <line x1="160" y1="60" x2="240" y2="60" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="240" y1="60" x2="240" y2="140" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="240" y1="140" x2="160" y2="140" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="160" y1="140" x2="160" y2="60" stroke="var(--accent-1)" strokeWidth="3"/>
+                  {/* Connecting edges */}
+                  <line x1="120" y1="80" x2="160" y2="60" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="200" y1="80" x2="240" y2="60" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="200" y1="160" x2="240" y2="140" stroke="var(--accent-1)" strokeWidth="3"/>
+                  <line x1="120" y1="160" x2="160" y2="140" stroke="var(--accent-1)" strokeWidth="3"/>
+                  
+                  {/* 8 corner points */}
+                  {/* Front face corners */}
+                  <circle cx="120" cy="80" r="5" fill="var(--accent-4)"/>
+                  <circle cx="200" cy="80" r="5" fill="var(--accent-4)"/>
+                  <circle cx="200" cy="160" r="5" fill="var(--accent-4)"/>
+                  <circle cx="120" cy="160" r="5" fill="var(--accent-4)"/>
+                  {/* Back face corners */}
+                  <circle cx="160" cy="60" r="5" fill="var(--accent-2)"/>
+                  <circle cx="240" cy="60" r="5" fill="var(--accent-2)"/>
+                  <circle cx="240" cy="140" r="5" fill="var(--accent-2)"/>
+                  <circle cx="160" cy="140" r="5" fill="var(--accent-2)"/>
                 </svg>
               </div>
               <div style={{ padding: '24px' }}>
@@ -634,7 +696,7 @@ export default function DataAnnotation() {
                   fontSize: '14px',
                   lineHeight: 1.6
                 }}>
-                  3D bounding boxes with orientation for depth perception and spatial understanding
+                  3D bounding boxes with 8 corner points for depth perception and spatial understanding
                 </p>
               </div>
             </div>
@@ -773,9 +835,9 @@ export default function DataAnnotation() {
                 items: ['Lane Detection', 'Traffic Sign Recognition', 'Pedestrian Tracking', '3D Scene Understanding']
               },
               {
-                icon: '🏥',
-                title: 'Medical Imaging',
-                items: ['Organ Segmentation', 'Tumor Detection', 'X-ray Analysis', 'Diagnostic Support']
+                icon: '🏙️',
+                title: 'Smart City',
+                items: ['Parking Space Detection', 'Road Markings', 'Street Furniture', 'Trash / Litter Detection']
               },
               {
                 icon: '🛍️',
@@ -1117,24 +1179,24 @@ export default function DataAnnotation() {
                   level: 'Level 1',
                   title: 'Initial Annotation',
                   desc: 'Expert annotators label data following strict guidelines',
-                  accuracy: '90-92%',
-                  color: 'var(--accent-1)',
+                  accuracy: '88-90%',
+                  color: 'rgba(255, 107, 53, 1)',
                   gradient: 'linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05))'
                 },
                 {
                   level: 'Level 2',
                   title: 'Peer Review',
                   desc: 'Secondary team validates and corrects annotations',
-                  accuracy: '93-94%',
-                  color: 'var(--accent-2)',
+                  accuracy: '91-93%',
+                  color: 'rgba(0, 217, 255, 1)',
                   gradient: 'linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05))'
                 },
                 {
                   level: 'Level 3',
                   title: 'Final QA',
                   desc: 'Senior specialists perform comprehensive audit',
-                  accuracy: '95-95.99%',
-                  color: '#10b981',
+                  accuracy: '94-95.99%',
+                  color: 'rgba(16, 185, 129, 1)',
                   gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05))'
                 }
               ].map((level, idx) => (
@@ -1157,11 +1219,20 @@ export default function DataAnnotation() {
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-16px) scale(1.03)';
-                    e.currentTarget.style.boxShadow = `0 30px 70px ${level.color}40`;
+                    // Enhanced shadow visibility for all levels
+                    if (idx === 0) {
+                      e.currentTarget.style.boxShadow = '0 30px 70px rgba(255, 107, 53, 0.5)';
+                    } else if (idx === 1) {
+                      e.currentTarget.style.boxShadow = '0 30px 70px rgba(0, 217, 255, 0.5)';
+                    } else {
+                      e.currentTarget.style.boxShadow = '0 30px 70px rgba(16, 185, 129, 0.5)';
+                    }
+                    e.currentTarget.style.borderColor = level.color;
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'translateY(0) scale(1)';
                     e.currentTarget.style.boxShadow = 'none';
+                    e.currentTarget.style.borderColor = 'transparent';
                   }}>
                     {/* Animated glow effect */}
                     <div style={{
