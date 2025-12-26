@@ -25,10 +25,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en" data-theme="dark">
       <head>
-        <link rel="icon" href="/images/logo_transparent.png" type="image/png" />
+        <link
+          rel="icon"
+          href={`${basePath}/images/logo_transparent.png`}
+          type="image/png"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

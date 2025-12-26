@@ -34,11 +34,9 @@ export default function Header() {
     <header className="site-header">
       <Link href="/" className="brand" style={{textDecoration:'none', display:'flex', gap:'12px', alignItems:'center'}}>
         <img
-          src={
-            theme === "dark"
-              ? "/images/logoName_light.png"
-              : "/images/logoName_dark.png"
-          }
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${
+            theme === "dark" ? "/images/logoName_light.png" : "/images/logoName_dark.png"
+          }`}
           alt="Code Cuboid Logo"
           className="logo"
         />

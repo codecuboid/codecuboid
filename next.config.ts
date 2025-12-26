@@ -26,6 +26,14 @@ const nextConfig: NextConfig = {
   // Generate URLs with a trailing slash so GitHub Pages can serve
   // the corresponding /path/index.html files correctly
   trailingSlash: true,
+
+   // Expose the base path at build time so we can prefix asset URLs
+   // (like images and favicons) in components. This ensures that
+   // absolute URLs work both locally and on GitHub Pages.
+   env: {
+     NEXT_PUBLIC_BASE_PATH:
+       process.env.NODE_ENV === "production" ? `/${REPO_NAME}` : "",
+   },
 };
 
 export default nextConfig;

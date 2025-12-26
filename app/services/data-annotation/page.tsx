@@ -244,7 +244,7 @@ export default function DataAnnotation() {
                 }}
               >
                 <img
-                  src="/images/HeroPageImage.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/HeroPageImage.png`}
                   alt="Top view of busy street with cuboid annotations for vehicles, pedestrians, pets and traffic signals"
                   style={{
                     width: '100%',
