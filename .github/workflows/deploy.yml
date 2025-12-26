@@ -37,12 +37,9 @@ jobs:
         run: npm ci || npm install
 
       - name: Build Next.js application
-        # Builds the app with output: "export" configured in next.config
+        # With output: "export" in next.config.ts, `next build` already
+        # generates the fully static site into the ./out directory.
         run: npm run build
-
-      - name: Export static site to ./out
-        # Generates static HTML/CSS/JS into the out directory for GitHub Pages
-        run: npm run export
 
       - name: Configure GitHub Pages
         # Informs GitHub Pages that this is a static Next.js site
