@@ -6,11 +6,11 @@ import ContactForm from "./ContactForm";
 
 const SERVICES = [
   { title: "Data Annotation Service", slug: "data-annotation", summary: "From 2D bounding boxes to complex 3D point clouds, we deliver high-quality annotations across images, videos, audio, and LiDAR data with pixel-perfect accuracy." },
-  { title: "Web Services & Custom Web Application", slug: "web-services", summary: "Custom web applications, APIs, and backend services designed for scale and reliability." },
-  { title: "Fullstack Development", slug: "fullstack-development", summary: "End-to-end product development with modern frameworks and testing." },
-  { title: "Mobile & Desktop Application", slug: "mobile-desktop-apps", summary: "Native and cross-platform mobile apps plus desktop applications, UI/UX and distribution support." },
-  { title: "DevOps & CI/CD", slug: "cicd-devops", summary: "Pipelines, infra-as-code, monitoring, and operational runbooks." },
-  { title: "Cloud Solutions", slug: "cloud-solution", summary: "Architecture, migration and cost-optimised cloud platforms across providers." },
+  { title: "Fullstack Development", slug: "fullstack-development", summary: "Coming Soon.." },
+  { title: "Cloud Solutions", slug: "cloud-solution", summary: "Coming Soon.." },
+  { title: "DevOps & CI/CD", slug: "cicd-devops", summary: "Coming Soon.." },
+  { title: "Managed QA Services", slug: "it-solutions", summary: "Coming Soon.." },
+  { title: "Mobile & Desktop Application", slug: "mobile-desktop-apps", summary: "Coming Soon.." },
 ];
 
 export default function FullscreenTabs(){

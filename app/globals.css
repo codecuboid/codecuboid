@@ -664,6 +664,7 @@ body[data-section="contact"] {
   gap: 22px;
   margin-top: 28px;
   width: 100%;
+  align-items: stretch;
 }
 
 @media (max-width: 1024px) {
@@ -679,6 +680,7 @@ body[data-section="contact"] {
   border: 2px solid var(--card-border);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  min-height: 260px;
 }
 
 .service-card:hover {
@@ -701,7 +703,7 @@ body[data-section="contact"] {
 }
 
 .service-cta {
-  margin-top: 16px;
+	margin-top: 16px;
   display: inline-block;
   padding: 12px 20px;
   background: linear-gradient(135deg, var(--accent-1), var(--accent-4));
