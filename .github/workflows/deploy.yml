@@ -1,0 +1,72 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# Required permissions for GitHub Pages deployments
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Ensure only one deployment runs at a time
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and export static site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        # Use npm ci when lockfile is present, otherwise fall back to npm install
+        run: npm ci || npm install
+
+      - name: Build Next.js application
+        # Builds the app with output: "export" configured in next.config
+        run: npm run build
+
+      - name: Export static site to ./out
+        # Generates static HTML/CSS/JS into the out directory for GitHub Pages
+        run: npm run export
+
+      - name: Configure GitHub Pages
+        # Informs GitHub Pages that this is a static Next.js site
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
+      - name: Upload artifact
+        # Upload the exported ./out directory for deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      # Expose the deployed URL as the environment URL in GitHub
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        # Official GitHub Pages deployment action
+        uses: actions/deploy-pages@v4
