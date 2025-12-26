@@ -45,7 +45,10 @@ jobs:
         # Informs GitHub Pages that this is a static Next.js site
         uses: actions/configure-pages@v5
         with:
+          # Tell GitHub this is a static Next.js site and
+          # auto-enable Pages for this repo using GitHub Actions
           static_site_generator: next
+          enablement: true
 
       - name: Upload artifact
         # Upload the exported ./out directory for deployment
