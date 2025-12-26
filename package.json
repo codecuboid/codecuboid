@@ -7,8 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    // With output: "export" in next.config.ts, `next build` already
-    // generates a fully static site in the `out/` directory.
     "build:static": "next build"
   },
   "dependencies": {
