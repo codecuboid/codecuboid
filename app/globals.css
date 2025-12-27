@@ -66,6 +66,45 @@ body {
   transition: background-color 350ms ease, color 200ms ease;
 }
 
+/* Desktop mode prompt overlay */
+.desktop-mode-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.desktop-mode-popup {
+  max-width: 420px;
+  width: 100%;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--accent-1);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  padding: 20px 22px;
+  text-align: left;
+}
+
+.desktop-mode-popup h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.desktop-mode-popup p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.desktop-mode-popup p.hint {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 /* Page root */
 .page-root {
   min-height: 100vh;
