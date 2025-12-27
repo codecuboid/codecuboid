@@ -129,14 +129,18 @@ export default function FullscreenTabs(){
           </p>
 
           {/* Premium CTA Section */}
-          <div style={{ 
-            display: 'flex', 
-            gap: '20px', 
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            animation: 'slideUp 800ms cubic-bezier(0.23, 1, 0.320, 1) 300ms forwards',
-            opacity: 0
-          }}>
+          <div
+            className="hero-cta-row"
+            style={{
+              display: "flex",
+              gap: "20px",
+              alignItems: "center",
+              flexWrap: "wrap",
+              animation:
+                "slideUp 800ms cubic-bezier(0.23, 1, 0.320, 1) 300ms forwards",
+              opacity: 0,
+            }}
+          >
             {/* Primary CTA */}
             <a href="#contact" style={{ 
               padding: '16px 48px', 
@@ -310,7 +314,18 @@ export default function FullscreenTabs(){
       {/* removed duplicate About section - merged into Overview */}
 
       <section id="contact" className="tab-section">
-        <div style={{maxWidth:1000, margin:'0 auto', display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'start', width:'100%'}}>
+        <div
+          className="contact-grid"
+          style={{
+            maxWidth: 1000,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: 48,
+            alignItems: "start",
+            width: "100%",
+          }}
+        >
           <div>
             <h1>Contact</h1>
             <p style={{fontSize:'clamp(14px, 2vw, 18px)', color:'var(--text-secondary)', lineHeight:1.8, marginBottom:20}}>Send us a quick overview of your needs, and we’ll build a personalized plan with clear steps, realistic timelines, and upfront pricing.</p>

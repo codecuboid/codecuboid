@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      <Link href="/" className="brand" style={{textDecoration:'none', display:'flex', gap:'12px', alignItems:'center'}}>
+      <Link href="/" className="brand">
         <img
           src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${
             theme === "dark" ? "/images/logoName_light.png" : "/images/logoName_dark.png"
